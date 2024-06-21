@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="form-row">
+            <input type="text" id="task-input" placeholder="Enter your task" required>
+            <input type="datetime-local" id="datetime-input" required>
+            <select id="task-type">
+                <option value="homework">Homework</option>
+                <option value="assignment">Assignment</option>
+                <option value="exam">Exam</option>
+                <option value="project">Project</option>
+                <option value="activity">Extracurricular Activity</option>
+                <option value="personal">Personal Task</option>
+                <option value="expense">Monthly Expense</option>
+            </select>
+            <button id="add-task-button" type="button">Add Task</button>
+        </div>
+        <div class="form-row">
+            <!-- <input type="number" id="expense-amount" placeholder="Enter amount"> -->
+            <!-- <button id="add-expense-button" type="button">Add Expense</button> -->
+        </div>
+        <div class="form-row">
+            <input type="datetime-local" id="from-date">
+            <input type="datetime-local" id="to-date">
+            <select id="filter-task-type">
+                <option value="">All Tasks</option>
+                <option value="homework">Homework</option>
+                <option value="assignment">Assignment</option>
+                <option value="exam">Exam</option>
+                <option value="project">Project</option>
+                <option value="activity">Extracurricular Activity</option>
+                <option value="personal">Personal Task</option>
+                <option value="expense">Monthly Expense</option>
+            </select>
+            <button id="filter-button">Filter</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
